@@ -5,6 +5,10 @@ nav {
   width: 100%;
 }
 
+a {
+  font-weight: bold;
+}
+
 nav ul {
   display: flex;
   justify-content: space-between;

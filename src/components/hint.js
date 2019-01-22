@@ -1,15 +1,9 @@
 import React from 'react';
+import './hint.css';
 
 function Hint(props) {
-  const styles = {
-    backgroundColor: '#CC324B',
-    textAlign: 'center',
-    padding: '20px',
-    color: 'white'
-  };
-
   return (
-    <div className="hint" style={styles}>
+    <div className="hint">
       <h2>Cold</h2>
     </div>
   );

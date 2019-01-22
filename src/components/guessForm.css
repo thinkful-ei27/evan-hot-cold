@@ -1,0 +1,38 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #394264;
+}
+
+.enter-guess {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  margin: 0, auto;
+  background-color: #50597b;
+  color: #95a5a6;
+  border: 1px solid black;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.submit-guess {
+  background-color: #1e243d;
+  color: #95a5a6;
+  border: 1px solid #1e243d;
+  width: 50%;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.guess-number {
+  color: #f39c13;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+}

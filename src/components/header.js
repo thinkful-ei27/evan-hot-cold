@@ -7,7 +7,7 @@ function Header(props) {
       <ul>
         <li>
           <a className="what" href="#">
-            WHAT
+            WHAT?
           </a>
         </li>
         <li>
