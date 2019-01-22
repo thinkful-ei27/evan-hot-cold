@@ -1,0 +1,13 @@
+a {
+  text-decoration: none;
+}
+
+.new-game {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.what {
+  display: flex;
+  justify-content: flex-start;
+}
