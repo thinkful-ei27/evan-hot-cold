@@ -4,12 +4,18 @@ import './header.css';
 function Header(props) {
   return (
     <nav className="header-nav">
-      <a className="what" href="#">
-        WHAT
-      </a>
-      <a className="new-game" href="#">
-        + NEW GAME
-      </a>
+      <ul>
+        <li>
+          <a className="what" href="#">
+            WHAT
+          </a>
+        </li>
+        <li>
+          <a className="new-game" href="#">
+            + NEW GAME
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 }

@@ -1,13 +1,14 @@
-a {
-  text-decoration: none;
+nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
-.new-game {
+nav ul {
   display: flex;
-  justify-content: flex-end;
-}
-
-.what {
-  display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1em;
+  padding: 0;
 }
