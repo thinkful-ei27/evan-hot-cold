@@ -64,7 +64,6 @@ class Board extends Component {
     if (this.state.what) {
       return <What handleClick={() => this.handleWhat()} />;
     }
-
     return (
       <div className="board">
         <Header
