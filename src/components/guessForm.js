@@ -3,15 +3,21 @@ import './guessForm.css';
 
 function GuessForm(props) {
   return (
-    <form>
+    <form
+      onSubmit={e => {
+        props.handleSubmit(e);
+        e.target.guess.value = '';
+      }}
+    >
       <input
+        name="guess"
         className="enter-guess"
-        type="text"
+        type="number"
         placeholder="Enter your Guess"
-        onChange={e=> props.theGuess(e)}
       />
-      <input className="submit-guess" type="submit" value="Guess" 
-      onClick={e=> props.theSubmit(e)}/>
+      <button className="submit-guess" type="submit">
+        Guess
+      </button>
       <p>
         Guess #<span className="guess-number">1</span>!
       </p>

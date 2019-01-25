@@ -1,33 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Hint from './hint';
 import GuessForm from './guessForm';
 import GuessLog from './guessLog';
 import './board.css';
 
-function Board(props) {
-  console.log(props.number);
+class Board extends Component {
+  state = {
+    theNumber: Math.floor(Math.random() * (100 - 1) + 1),
+    theGuessArray: []
+  };
 
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log('hello');
+    let value = Number(e.target.guess.value);
 
+    const tempArray = [...this.state.theGuessArray, value];
+    value = '';
+    this.setState({
+      theGuessArray: tempArray
+    });
+  }
 
-function handleNumbers(e) {
-  e.preventDefault();
-let currentGuess =(e.target.value);
-props.userNumber(currentGuess);
-if (currentGuess === props.number){
-  console.log('you win');
-}
-// put in state
-// push it to the array
-}
-
-  return (
-    <div className="board">
-      <Hint />
-      <GuessForm 
-      theGuess={(e)=>handleNumbers(e)}/>
-      <GuessLog />
-    </div>
-  );
+  render() {
+    return (
+      <div className="board">
+        <Hint />
+        <GuessForm handleSubmit={e => this.handleSubmit(e)} />
+        <GuessLog userGuesses={this.state.theGuessArray} />
+      </div>
+    );
+  }
 }
 
 export default Board;
