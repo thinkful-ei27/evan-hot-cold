@@ -1,0 +1,22 @@
+.what {
+  background-color: #e74c3c;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+  transition: 5s;
+}
+
+.what li {
+  line-height: 30px;
+  list-style: none;
+}
+
+.what button {
+  font-size: 0.8em;
+  padding: 0.5em 2em;
+  background-color: #1f253d;
+  border-color: #1f253d;
+  border-radius: 3px;
+  color: #95a5a6;
+}

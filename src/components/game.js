@@ -7,7 +7,6 @@ export default class Game extends Component {
   render() {
     return (
       <div className="game">
-        <Header />
         <h1>HOT or COLD</h1>
         <Board />
       </div>

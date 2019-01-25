@@ -6,12 +6,16 @@ function Header(props) {
     <nav className="header-nav">
       <ul>
         <li>
-          <a className="what" href="http://www.google.com">
+          <a
+            className="what-button"
+            href="#"
+            onClick={() => props.handleWhat()}
+          >
             WHAT?
           </a>
         </li>
         <li>
-          <a className="new-game" href="http://www.google.com">
+          <a className="new-game" href="#" onClick={() => props.newGame()}>
             + NEW GAME
           </a>
         </li>
