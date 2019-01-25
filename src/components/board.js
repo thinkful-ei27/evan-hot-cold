@@ -5,10 +5,26 @@ import GuessLog from './guessLog';
 import './board.css';
 
 function Board(props) {
+  console.log(props.number);
+
+
+
+function handleNumbers(e) {
+  e.preventDefault();
+let currentGuess =(e.target.value);
+props.userNumber(currentGuess);
+if (currentGuess === props.number){
+  console.log('you win');
+}
+// put in state
+// push it to the array
+}
+
   return (
     <div className="board">
       <Hint />
-      <GuessForm />
+      <GuessForm 
+      theGuess={(e)=>handleNumbers(e)}/>
       <GuessLog />
     </div>
   );
