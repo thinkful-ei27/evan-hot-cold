@@ -5,3 +5,15 @@
   color: white;
   border-radius: 5px 5px 0 0;
 }
+
+.cold{
+  background-color: blue;
+}
+
+.warm {
+  background-color: pink;
+}
+
+.hot{
+  background-color:tomato;
+}
