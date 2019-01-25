@@ -6,12 +6,12 @@ function Header(props) {
     <nav className="header-nav">
       <ul>
         <li>
-          <a className="what" href="#">
+          <a className="what" href="http://www.google.com">
             WHAT?
           </a>
         </li>
         <li>
-          <a className="new-game" href="#">
+          <a className="new-game" href="http://www.google.com">
             + NEW GAME
           </a>
         </li>

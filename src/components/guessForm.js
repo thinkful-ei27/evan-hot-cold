@@ -19,7 +19,7 @@ function GuessForm(props) {
         Guess
       </button>
       <p>
-        Guess #<span className="guess-number">1</span>!
+        Guess #<span className="guess-number">{props.guessCount}</span>!
       </p>
     </form>
   );
